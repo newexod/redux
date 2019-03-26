@@ -1,6 +1,13 @@
 import * as actionTypes from './actionTypes';
 
 export const saveResult = (res) => {
+	// ПЛОХОЙ вариант трансформации данных в action
+	// const updatedResult = res * 2;
+	// return {
+	// 	type: actionTypes.STORE_RESULT,
+	// 	result: updatedResult
+	// };
+
 	return {
 		type: actionTypes.STORE_RESULT,
 		result: res

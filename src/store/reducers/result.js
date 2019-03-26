@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.STORE_RESULT:
       return {
         ...state,
-        results: state.results.concat({id: new Date(), payload: action.result})
+        results: state.results.concat({id: new Date(), payload: action.result * 2}) // ХОРОШИЙ вариант трансформации данных в reducer
       }
     case actionTypes.DELETE_RESULT:
       // 1 вариант иммутабельности
